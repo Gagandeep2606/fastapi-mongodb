@@ -48,18 +48,6 @@ def setup_data():
 
     return {"message": "100 fake users inserted"}
 
-# find the users less than 25 age
-
-# @app.get("/user_age")
-# def user_age():
-
-#     result = users.find(
-#         {"age": {"$lt": 25}},
-#          {"_id": 0}
-#     )
-
-#     return list(result)
-
 @app.get("/users-under-25")
 def users_under_25():
 
